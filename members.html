@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Members</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">🏋️ Gym Management System</header>
+  <div class="back-button">
+    <a href="index.html">⬅️ Back to Dashboard</a>
+  </div>
+
+  <h2>👥 Registered Members</h2>
+  <button id="exportCSV" class="styled-button">⬇️ Export as CSV</button>
+
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Address</th><th>Mobile</th>
+        <th>Age</th><th>Plan</th><th>Transaction ID</th><th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="memberList"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

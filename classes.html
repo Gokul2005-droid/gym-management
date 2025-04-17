@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Classes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">🏋️ Gym Management System</header>
+  <div class="back-button">
+    <a href="index.html">⬅️ Back to Dashboard</a>
+  </div>
+
+  <h2>📚 Manage Class Attendance</h2>
+  <form id="classForm" class="styled-form">
+    <label for="classDate">Class Date:</label>
+    <input type="date" id="classDate" required>
+
+    <div id="memberChecklist" class="checkbox-grid"></div>
+
+    <button type="submit">Mark Attendance</button>
+  </form>
+
+  <h3>✅ Attendance Marked for Class</h3>
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Member ID</th><th>Name</th><th>Date</th>
+      </tr>
+    </thead>
+    <tbody id="classAttendanceList"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
